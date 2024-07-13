@@ -184,5 +184,7 @@ public class Main {
         System.out.println("Landed page title : "+driver.getTitle());
         System.out.println("Landed page URL : "+driver.getCurrentUrl());
 
+
+
     }
 }
