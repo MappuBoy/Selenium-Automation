@@ -13,7 +13,7 @@ public class LocatorsImprovment {
     public static void main(String[] args) throws InterruptedException {
 
         //open the browser
-        WebDriver driver=new EdgeDriver();
+        WebDriver driver=new ChromeDriver();
 
         //Implicit wait globally affete to all the steps - It wait until 5 sec if it performs quickly then it is not wait until 5 sec
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -74,6 +74,9 @@ public class LocatorsImprovment {
         Thread.sleep(1000);
 
         //select the checkbox
+
+        //access the siblings using Xpath as //form/div/span/label/a[1]/following-sibling::a
+        //access the parent using Xpath as //form/div/span/label/a[1]/parent::div
         driver.findElement(By.id("chkboxOne")).click();
         Thread.sleep(500);
         driver.findElement(By.name("chkboxTwo")).click();
