@@ -55,6 +55,9 @@ public class Locaters {
         //there needs to use Thread.sleep() method in the 42 line
 */
 
+        //using findElement method inside in the assertion
+
+        Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")),"Hello Rahul,");
 
 
     }
