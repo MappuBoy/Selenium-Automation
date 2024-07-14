@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="access the parent and sibllings">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WindowActivities.java" afterDir="false" />
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="browser methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AutomationInTheWebPages.executor": "Run",
     "Application.Locaters.executor": "Run",
     "Application.LocatorsImprovment.executor": "Run",
     "Application.Main.executor": "Run",
@@ -64,7 +64,20 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.WindowActivities">
+  <component name="RunManager" selected="Application.AutomationInTheWebPages">
+    <configuration name="AutomationInTheWebPages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AutomationInTheWebPages" />
+      <module name="Selenium_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Locaters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Locaters" />
       <module name="Selenium_Project" />
@@ -119,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutomationInTheWebPages" />
         <item itemvalue="Application.WindowActivities" />
         <item itemvalue="Application.LocatorsImprovment" />
         <item itemvalue="Application.Locaters" />
@@ -239,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720938822996</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="browser methods">
+      <option name="closed" value="true" />
+      <created>1720941037464</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720941037464</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +290,8 @@
     <MESSAGE value="Run the script in Firefox" />
     <MESSAGE value="Run the script in Edgedriver" />
     <MESSAGE value="access the parent and sibllings" />
-    <option name="LAST_COMMIT_MESSAGE" value="access the parent and sibllings" />
+    <MESSAGE value="browser methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="browser methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -281,6 +304,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java</url>
+          <line>9</line>
+          <properties class="org.example.AutomationInTheWebPages" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
