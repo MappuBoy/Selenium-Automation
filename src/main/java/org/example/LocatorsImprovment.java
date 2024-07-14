@@ -3,6 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
@@ -12,7 +13,7 @@ public class LocatorsImprovment {
     public static void main(String[] args) throws InterruptedException {
 
         //open the browser
-        WebDriver driver=new FirefoxDriver();
+        WebDriver driver=new EdgeDriver();
 
         //Implicit wait globally affete to all the steps - It wait until 5 sec if it performs quickly then it is not wait until 5 sec
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
