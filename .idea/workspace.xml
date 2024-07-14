@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Run the script in Edgedriver">
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="access the parent and sibllings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WindowActivities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LocatorsImprovment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LocatorsImprovment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
     "Application.Locaters.executor": "Run",
     "Application.LocatorsImprovment.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.WindowActivities.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -62,7 +64,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LocatorsImprovment">
+  <component name="RunManager" selected="Application.WindowActivities">
     <configuration name="Locaters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Locaters" />
       <module name="Selenium_Project" />
@@ -102,8 +104,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WindowActivities" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.WindowActivities" />
+      <module name="Selenium_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WindowActivities" />
         <item itemvalue="Application.LocatorsImprovment" />
         <item itemvalue="Application.Locaters" />
         <item itemvalue="Application.Main" />
@@ -215,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720937787769</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="access the parent and sibllings">
+      <option name="closed" value="true" />
+      <created>1720938822996</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720938822996</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +267,8 @@
     <MESSAGE value="retrieve password from the getPassword method" />
     <MESSAGE value="Run the script in Firefox" />
     <MESSAGE value="Run the script in Edgedriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Run the script in Edgedriver" />
+    <MESSAGE value="access the parent and sibllings" />
+    <option name="LAST_COMMIT_MESSAGE" value="access the parent and sibllings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
