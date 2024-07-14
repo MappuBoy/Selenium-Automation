@@ -23,21 +23,7 @@ public class LocatorsImprovment {
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
 
-        //using the locators
-
-        /*using ID locator
-        ===================
-        driver.findElement(By.id("inputUsername")) -  to find the element by the id "inputUsername"
-        sendKeys - use to input values to element that represent the id
-        */
-
         driver.findElement(By.id("inputUsername")).sendKeys("rahul");
-
-          /*using Name locator
-        ===================
-        driver.findElement(By.name("inputPassword")) -  to find the element by the name "inputPassword"
-        sendKeys - use to input values to element that represent the id
-        */
 
         driver.findElement(By.name("inputPassword")).sendKeys("hello two");
 
@@ -72,23 +58,6 @@ public class LocatorsImprovment {
         //stop the execute code section for 2 sec
         Thread.sleep(2000);
 
-        //hard coding the username and password
-        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Rahul");
-
-        //using css locator with regular expression, by using "*" to state the static word part
-        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
-
-        //select the checkbox
-        driver.findElement(By.id("chkboxOne")).click();
-        driver.findElement(By.name("chkboxTwo")).click();
-
-        //click the button
-        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
-
-        //To check the if the loaded page
-        System.out.println("Landed page title : "+driver.getTitle());
-        System.out.println("Landed page URL : "+driver.getCurrentUrl());
-
         //using variable to id the username
         String userName = "Rahul";
 
@@ -98,8 +67,11 @@ public class LocatorsImprovment {
         //using css locator with regular expression, by using "*" to state the static word part
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 
+        Thread.sleep(1000);
+
         //select the checkbox
         driver.findElement(By.id("chkboxOne")).click();
+        Thread.sleep(500);
         driver.findElement(By.name("chkboxTwo")).click();
 
         //click the button

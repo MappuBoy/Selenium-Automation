@@ -185,43 +185,6 @@ public class Main {
         System.out.println("Landed page title : "+driver.getTitle());
         System.out.println("Landed page URL : "+driver.getCurrentUrl());
 
-        //using variable to id the username
-        String userName = "Rahul";
-
-        //hard coding the username and password
-        driver.findElement(By.cssSelector("#inputUsername")).sendKeys(userName);
-
-        //using css locator with regular expression, by using "*" to state the static word part
-        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
-
-        //select the checkbox
-        driver.findElement(By.id("chkboxOne")).click();
-        driver.findElement(By.name("chkboxTwo")).click();
-
-        //click the button
-        //using xpath locator with regular expression, by using "contains" keyword to state the static word part
-        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
-
-        /*//To check the if the loaded page
-        System.out.println("Landed page title : "+driver.getTitle());
-        System.out.println("Landed page URL : "+driver.getCurrentUrl());
-*/
-        Thread.sleep(2000);
-
-      //  System.out.println(driver.findElement(By.tagName("p")).getText());
-
-        System.out.println("===================================================================================================");
-
-        //Using assertions to validate the actual and expected results using "Assert" and "assertEquals" method
-        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"You are successfully logged in.");
-        Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+userName+",");
-
-        //Click the logout button
-        driver.findElement(By.xpath("//button[text() ='Log Out']")).click();
-
-        //close the browser using close() button
-        driver.close();
-
 
     }
 }
