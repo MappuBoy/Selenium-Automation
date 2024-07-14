@@ -3,6 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -11,7 +12,7 @@ public class LocatorsImprovment {
     public static void main(String[] args) throws InterruptedException {
 
         //open the browser
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver=new FirefoxDriver();
 
         //Implicit wait globally affete to all the steps - It wait until 5 sec if it performs quickly then it is not wait until 5 sec
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -51,7 +52,7 @@ public class LocatorsImprovment {
         System.out.println(password);
 
         //redirect to login page
-        driver.findElement(By.cssSelector("button.go-to-login-btn")).click();
+        //driver.findElement(By.cssSelector("button.go-to-login-btn")).click();
 
         driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
 
