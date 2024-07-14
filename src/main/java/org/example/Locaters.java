@@ -19,8 +19,11 @@ public class Locaters {
         //landing the url
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
 
+        //using variable to id the username
+        String userName = "Rahul";
+
         //hard coding the username and password
-        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Rahul");
+        driver.findElement(By.cssSelector("#inputUsername")).sendKeys(userName);
 
         //using css locator with regular expression, by using "*" to state the static word part
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
@@ -56,8 +59,13 @@ public class Locaters {
 */
 
         //using findElement method inside in the assertion
+        //using variable with string operator
+        //Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")),"Hello "+userName+",");
+        //Exception in thread "main" java.lang.AssertionError: expected [Hello Rahul,] but found [[[ChromeDriver: chrome
+        // on windows (d302f6566fe26a4ebe9406e79e7ccad7)] -> css selector: div[class='login-container'] h2]]
+        //This error happen because not using getText() method after insert the location
 
-        Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")),"Hello Rahul,");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+userName+",");
 
 
     }
