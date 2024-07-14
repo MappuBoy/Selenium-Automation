@@ -3,11 +3,12 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.time.Duration;
 
 public class Locaters {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //open the browser
         WebDriver driver=new ChromeDriver();
@@ -36,6 +37,25 @@ public class Locaters {
         System.out.println("Landed page title : "+driver.getTitle());
         System.out.println("Landed page URL : "+driver.getCurrentUrl());
 
-        // if there
+        // if there is a tag that only used in one time on the page then can user "Tag name" locator
+        //in the "https://rahulshettyacademy.com/locatorspractice/" page only one <p> tag therefore using that tag to locate\
+
+        Thread.sleep(2000);
+
+        System.out.println(driver.findElement(By.tagName("p")).getText());
+
+        System.out.println("===================================================================================================");
+
+        //Using assertions to validate the actual and expected results using "Assert" and "assertEquals" method
+        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"You are successfully logged in.");
+/*
+        //Exception in thread "main" java.lang.AssertionError: expected [You are successfully logged in.] but found []
+        //This exception display because of not using the timeout to load the page successfully. because it is a single
+        // page app it takes some time to load the page if mot it cjeck the results from the parent page
+        //there needs to use Thread.sleep() method in the 42 line
+*/
+
+
+
     }
 }
