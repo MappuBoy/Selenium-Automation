@@ -32,7 +32,14 @@ public class AutomationInTheWebPages {
 
         /*select option using selectByVisibleText() to select the option from the visible option on the UI
          */
+        Thread.sleep(500);
         dropdown.selectByVisibleText("AED");
+        System.out.println(dropdown.getFirstSelectedOption().getText());
+
+        Thread.sleep(500);
+        /*select option using selectByValue() to select the option from the value attribute in the console
+         */
+        dropdown.selectByValue("INR");
         System.out.println(dropdown.getFirstSelectedOption().getText());
 
 
