@@ -64,8 +64,10 @@ public class LocatorsImprovment {
         //hard coding the username and password
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys(userName);
 
+        //getting the value from the getPassword method
+        String retrivePassword = getPassword(password);
         //using css locator with regular expression, by using "*" to state the static word part
-        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys(retrivePassword);
 
         Thread.sleep(1000);
 
@@ -76,15 +78,16 @@ public class LocatorsImprovment {
 
         //click the button
         //using xpath locator with regular expression, by using "contains" keyword to state the static word part
-        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
 
-        /*//To check the if the loaded page
+        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+        Thread.sleep(3000);
+
+        //To check the if the loaded page
         System.out.println("Landed page title : "+driver.getTitle());
         System.out.println("Landed page URL : "+driver.getCurrentUrl());
-*/
-        Thread.sleep(2000);
 
-        //  System.out.println(driver.findElement(By.tagName("p")).getText());
+
+        System.out.println(driver.findElement(By.tagName("p")).getText());
 
         System.out.println("===================================================================================================");
 
@@ -95,7 +98,28 @@ public class LocatorsImprovment {
         //Click the logout button
         driver.findElement(By.xpath("//button[text() ='Log Out']")).click();
 
+        Thread.sleep(4000);
+
         //close the browser using close() button
         driver.close();
+    }
+
+    //creating method with "String" Keyword and pass parameters as previously extracted password
+    public static String getPassword(String password) throws InterruptedException {
+
+        //text - Please use temporary password 'rahulshettyacademy' to Login.
+        String [] passwordArray = password.split("'");
+        /*after splitiing from the "'"
+                0th index : Please use temporary password
+                1st index : 'rahulshettyacademy' to Login.
+         */
+        String split_password = passwordArray[1].split("'")[0];
+                /*after splitiing from the "'"
+                0th index : 'rahulshettyacademy'
+                1st index :  to Login.
+                By using [0] accessing the first index value of the previosly splitted
+         */
+        return split_password;
+
     }
 }

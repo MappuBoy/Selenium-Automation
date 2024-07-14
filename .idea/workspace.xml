@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Fully implement project">
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Changers upload after resolving an error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LocatorsImprovment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LocatorsImprovment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/LocatorsImprovment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720933813689</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changers upload after resolving an error">
+      <option name="closed" value="true" />
+      <created>1720934499959</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720934499959</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,7 +216,8 @@
     <MESSAGE value="using findElement with css locator with assertions" />
     <MESSAGE value="e2e happy path" />
     <MESSAGE value="Fully implement project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully implement project" />
+    <MESSAGE value="Changers upload after resolving an error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changers upload after resolving an error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
