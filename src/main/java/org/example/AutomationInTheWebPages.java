@@ -44,31 +44,32 @@ public class AutomationInTheWebPages {
          *//*
         dropdown.selectByValue("INR");
         System.out.println(dropdown.getFirstSelectedOption().getText());
-        Thread.sleep(500);
+        Thread.sleep(500);*/
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         System.out.println("Before selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(1000);
 
         //1st way
-        *//*driver.findElement(By.id("hrefIncAdt")).click();
+        /*driver.findElement(By.id("hrefIncAdt")).click();
         driver.findElement(By.id("hrefIncAdt")).click();
         driver.findElement(By.id("hrefIncAdt")).click();
         driver.findElement(By.id("hrefIncAdt")).click();*//*
 
         //2nd way
-        *//*repeat for 3 times using for while loop
+        /*repeat for 3 times using for while loop
         when we using while loop it will rotate for infinent time but when we use
         this it will stop after loop condition is ture
-        *//*
+        */
 
+        /*
         //initialize the variable
         int i =0;
         //comparison
         while (i<4){
             driver.findElement(By.id("hrefIncAdt")).click();
             i++;
-        }*//*
+        }*/
 
         //using for loop for the execution
         for (int i = 0; i < 4; i++) {
@@ -78,8 +79,11 @@ public class AutomationInTheWebPages {
         driver.findElement(By.id("btnclosepaxoption")).click();
         //when we know exact endpoint of the iteration then using for loop if not we using while loop
 
+        //
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adults");
         System.out.println("After selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
-        Thread.sleep(1000); */
+        Thread.sleep(1000);
+        /*
 
         //Dynamic dropdowns - These dropdowns displays according to the user selected option
 
@@ -168,6 +172,8 @@ public class AutomationInTheWebPages {
 
         System.out.println("Number of check boxes : "+driver.findElements(By.cssSelector("input[type = 'checkbox']"
         )).size());
+
+
 
 
 
