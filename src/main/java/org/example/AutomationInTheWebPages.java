@@ -58,15 +58,22 @@ public class AutomationInTheWebPages {
         this it will stop after loop condition is ture
         */
 
-        //initialize the variable
+        /*//initialize the variable
         int i =0;
         //comparison
         while (i<4){
             driver.findElement(By.id("hrefIncAdt")).click();
             i++;
+        }*/
+
+        //using for loop for the execution
+        for (int i = 0; i < 4; i++) {
+            driver.findElement(By.id("hrefIncAdt")).click();
         }
 
         driver.findElement(By.id("btnclosepaxoption")).click();
+        //when we know exact endpoint of the iteration then using for loop if not we using while loop
 
     }
 }
+
