@@ -107,6 +107,7 @@ public class LocatorsImprovment {
 
         //close the browser using close() button
         driver.close();
+
     }
 
     //creating method with "String" Keyword and pass parameters as previously extracted password

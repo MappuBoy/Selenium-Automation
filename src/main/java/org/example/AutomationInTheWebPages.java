@@ -11,7 +11,7 @@ public class AutomationInTheWebPages {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
-        driver.manage().window().fullscreen();
+        //driver.manage().window().fullscreen();
         Thread.sleep(500);
 
         //static dropdown with "Select" tag to access that user Select in build class
@@ -41,10 +41,32 @@ public class AutomationInTheWebPages {
          */
         dropdown.selectByValue("INR");
         System.out.println(dropdown.getFirstSelectedOption().getText());
+        Thread.sleep(500);
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        driver.findElement(By.id("divpaxinfo")).click();
+        Thread.sleep(1000);
 
+        //1st way
+        /*driver.findElement(By.id("hrefIncAdt")).click();
+        driver.findElement(By.id("hrefIncAdt")).click();
+        driver.findElement(By.id("hrefIncAdt")).click();
+        driver.findElement(By.id("hrefIncAdt")).click();*/
 
+        //2nd way
+        /*repeat for 3 times using for while loop
+        when we using while loop it will rotate for infinent time but when we use
+        this it will stop after loop condition is ture
+        */
 
-        Thread.sleep(2000);
-        driver.close();
+        //initialize the variable
+        int i =0;
+        //comparison
+        while (i<4){
+            driver.findElement(By.id("hrefIncAdt")).click();
+            i++;
+        }
+
+        driver.findElement(By.id("btnclosepaxoption")).click();
+
     }
 }
