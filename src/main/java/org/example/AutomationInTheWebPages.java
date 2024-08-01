@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -110,7 +111,7 @@ public class AutomationInTheWebPages {
         //travese xpath
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
-        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();*/
+        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -140,15 +141,26 @@ public class AutomationInTheWebPages {
                 option.click();
                 break;
             }
-        }*/
-
+        }
+*/
         System.out.println(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
 
         System.out.println("====================================================================================");
+
+        //assertFalse expects false values there it check if output is equals to false and also the expectation is false the it will pass
+        Assert.assertFalse(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
         driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).click();
+
+
          //check it select or not using "isSelected();" method
-        System.out.println(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
+        //assertTrue expects true values there it check if output is equals to true and also the expectation is true the it will pass
+
          driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+
+        Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+
+        System.out.println("====================================================================================");
 
          //print the count the number of check boxes
         //step 1 -> find a common locator
@@ -156,6 +168,9 @@ public class AutomationInTheWebPages {
 
         System.out.println("Number of check boxes : "+driver.findElements(By.cssSelector("input[type = 'checkbox']"
         )).size());
+
+        //Assertion
+
 
     }
 }

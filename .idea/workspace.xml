@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Auto suggested dropdown">
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Check Boxes and &quot;size&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -351,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722503147102</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Check Boxes and &quot;size&quot; method">
+      <option name="closed" value="true" />
+      <created>1722504456261</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722504456261</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +398,8 @@
     <MESSAGE value="Dynamic dropdown using instances" />
     <MESSAGE value="Dynamic dropdown using parent to chlid xpath traverse" />
     <MESSAGE value="Auto suggested dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auto suggested dropdown" />
+    <MESSAGE value="Check Boxes and &quot;size&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check Boxes and &quot;size&quot; method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -406,7 +415,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java</url>
-          <line>10</line>
+          <line>11</line>
           <properties class="org.example.AutomationInTheWebPages" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
