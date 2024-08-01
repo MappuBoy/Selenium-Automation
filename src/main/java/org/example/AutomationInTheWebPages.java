@@ -43,6 +43,7 @@ public class AutomationInTheWebPages {
         System.out.println(dropdown.getFirstSelectedOption().getText());
         Thread.sleep(500);
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        System.out.println("Before selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(1000);
 
@@ -73,6 +74,8 @@ public class AutomationInTheWebPages {
 
         driver.findElement(By.id("btnclosepaxoption")).click();
         //when we know exact endpoint of the iteration then using for loop if not we using while loop
+
+        System.out.println("After selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
 
     }
 }

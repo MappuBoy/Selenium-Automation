@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Using a while loop instead of repeating code">
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Using a while for instead of while loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AutomationInTheWebPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722486048821</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Using a while for instead of while loop">
+      <option name="closed" value="true" />
+      <created>1722486242835</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722486242836</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +336,8 @@
     <MESSAGE value="Static Dropdown with getFirstSelectedOption method" />
     <MESSAGE value="Static Dropdown with selectByValue method" />
     <MESSAGE value="Using a while loop instead of repeating code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using a while loop instead of repeating code" />
+    <MESSAGE value="Using a while for instead of while loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using a while for instead of while loop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
