@@ -12,6 +12,7 @@ public class AutomationInTheWebPages {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         //driver.manage().window().fullscreen();
+
         Thread.sleep(500);
 
         //static dropdown with "Select" tag to access that user Select in build class
