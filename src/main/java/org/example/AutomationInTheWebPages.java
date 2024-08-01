@@ -128,7 +128,7 @@ public class AutomationInTheWebPages {
 
          This is a for-each loop in Java.
          options is a collection of WebElement objects (likely obtained from a previous Selenium command such as findElements).
-         The loop iterates over each element (option) in the options collection one by one.*/
+         The loop iterates over each element (option) in the options collection one by one.
 
         //"//li[@class = 'ui-menu-item']/a" -> Genaric location
 
@@ -140,7 +140,23 @@ public class AutomationInTheWebPages {
                 option.click();
                 break;
             }
-        }
+        }*/
+
+        System.out.println(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
+
+        System.out.println("====================================================================================");
+        driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).click();
+         //check it select or not using "isSelected();" method
+        System.out.println(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
+         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+
+         //print the count the number of check boxes
+        //step 1 -> find a common locator
+        //step 2 -> user "findElements" because it is plural and using "size" method get the count
+
+        System.out.println("Number of check boxes : "+driver.findElements(By.cssSelector("input[type = 'checkbox']"
+        )).size());
+
     }
 }
 

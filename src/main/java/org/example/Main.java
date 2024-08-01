@@ -94,7 +94,7 @@ public class Main {
         Value must unique with other elements.
         tagname#id
         tagname.class
-        tagnae[attribute='value']
+        tagname[attribute='value']
         using getText() method to retrieve the data that locator identified
         */
 
