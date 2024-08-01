@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class AutomationInTheWebPages {
     public static void main(String[] args) throws InterruptedException {
@@ -96,7 +97,7 @@ public class AutomationInTheWebPages {
 //  //a[@value='MAA']  - Xpath for chennai
 
 //  //a[@value='BLR']
-
+/*
 
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 
@@ -109,8 +110,37 @@ public class AutomationInTheWebPages {
         //travese xpath
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
-        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();*/
 
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Auto suggest dropdown
+
+        //sort the india option
+        driver.findElement(By.id("autosuggest")).sendKeys("ind");
+        Thread.sleep(1000);
+
+        //because of the grab item palce can be changes therefore grab the full element list and sort
+        //using List <WebElement> to store the values
+        //driver.findElements(By.xpath("//li[@class = 'ui-menu-item']/a")) by using locate all the items under the "ind"
+        //Because it getting muliple values there using "findElements" keyword
+        /*for (WebElement option : options):
+
+         This is a for-each loop in Java.
+         options is a collection of WebElement objects (likely obtained from a previous Selenium command such as findElements).
+         The loop iterates over each element (option) in the options collection one by one.*/
+
+        //"//li[@class = 'ui-menu-item']/a" -> Genaric location
+
+        List <WebElement> options = driver.findElements(By.xpath("//li[@class = 'ui-menu-item']/a"));
+
+
+        for (WebElement option:options){
+            if(option.getText().equalsIgnoreCase("India")){
+                option.click();
+                break;
+            }
+        }
     }
 }
 
