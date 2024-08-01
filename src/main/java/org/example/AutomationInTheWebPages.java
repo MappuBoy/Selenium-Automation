@@ -78,6 +78,17 @@ public class AutomationInTheWebPages {
 
         System.out.println("After selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
 
+        //Dynamic dropdowns - These dropdowns displays according to the user selected option
+
+        //Xpath ->//a[@value='BLR'],//a[@value='MAA'][2] using "[2]" because need to select it from second option
+
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1")).click();
+        driver.findElement(By.xpath("//a[@value='BLR']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[@value='MAA']")).click();
+
+
+
     }
 }
 
