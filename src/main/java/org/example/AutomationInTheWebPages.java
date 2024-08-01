@@ -80,7 +80,7 @@ public class AutomationInTheWebPages {
         //when we know exact endpoint of the iteration then using for loop if not we using while loop
 
         //
-        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adults");
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adult");
         System.out.println("After selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
         Thread.sleep(1000);
         /*
