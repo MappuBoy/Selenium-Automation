@@ -169,7 +169,7 @@ public class AutomationInTheWebPages {
         System.out.println("Number of check boxes : "+driver.findElements(By.cssSelector("input[type = 'checkbox']"
         )).size());
 
-        //Assertion
+
 
 
     }
