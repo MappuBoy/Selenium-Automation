@@ -97,6 +97,7 @@ public class AutomationInTheWebPages {
 
 //  //a[@value='BLR']
 
+
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 
         driver.findElement(By.xpath("//a[@value='BLR']")).click();
