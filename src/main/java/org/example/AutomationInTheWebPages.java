@@ -44,7 +44,7 @@ public class AutomationInTheWebPages {
          *//*
         dropdown.selectByValue("INR");
         System.out.println(dropdown.getFirstSelectedOption().getText());
-        Thread.sleep(500);*/
+        Thread.sleep(500);
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         System.out.println("Before selecting the values : "+driver.findElement(By.id("divpaxinfo")).getText());
         driver.findElement(By.id("divpaxinfo")).click();
@@ -69,7 +69,7 @@ public class AutomationInTheWebPages {
         while (i<4){
             driver.findElement(By.id("hrefIncAdt")).click();
             i++;
-        }*/
+        }
 
         //using for loop for the execution
         for (int i = 0; i < 4; i++) {
@@ -146,7 +146,7 @@ public class AutomationInTheWebPages {
                 break;
             }
         }
-*/
+
         System.out.println(driver.findElement(By.name("ctl00$mainContent$chk_friendsandfamily")).isSelected());
 
         System.out.println("====================================================================================");
@@ -172,8 +172,31 @@ public class AutomationInTheWebPages {
 
         System.out.println("Number of check boxes : "+driver.findElements(By.cssSelector("input[type = 'checkbox']"
         )).size());
+        */
 
 
+        //current date locator -> .ui-state-default.ui-state-highlight.ui-state-active
+        //if there are spaces in the then it need to replace it with "."
+
+
+        //Checking disable or enable options
+      //  System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+        System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+        System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
+        //System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+
+        //"getAttribute" method using to get the element that changing the value when disable the button
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")){
+            System.out.println("Its enable");
+            Assert.assertTrue(true);
+        }else {
+            System.out.println("Its diable");
+            //failing this script because of the because the condition is failed
+            Assert.assertTrue(false);
+        }
+
+        //why selenium is failing to show
 
 
 
