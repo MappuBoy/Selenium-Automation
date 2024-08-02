@@ -18,6 +18,8 @@ public class Alerts {
         //Then it will check whether the alerts are available in the browser
         //to accept the alert using "accept()" method
 
+        //grab the text from the alert
+        System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
 
 

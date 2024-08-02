@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Enable/disable using is Enable method and assertion">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Alerts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/AutomationInTheWebPages.class" afterDir="false" />
+    <list default="true" id="15df7488-a959-4524-9c02-6bd97d8943fb" name="Changes" comment="Alerts">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Alerts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Alerts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -407,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722575978569</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Alerts">
+      <option name="closed" value="true" />
+      <created>1722578095609</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722578095609</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement tag name locator, assertions with testNG" />
     <MESSAGE value="using findElement method inside in the assertion" />
     <MESSAGE value="using findElement with css locator with assertions" />
     <MESSAGE value="e2e happy path" />
@@ -447,7 +452,8 @@
     <MESSAGE value="Assertion error" />
     <MESSAGE value="Assertion error fixed" />
     <MESSAGE value="Enable/disable using is Enable method and assertion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable/disable using is Enable method and assertion" />
+    <MESSAGE value="Alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alerts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
