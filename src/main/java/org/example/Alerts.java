@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Alerts {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
@@ -18,9 +18,14 @@ public class Alerts {
         //Then it will check whether the alerts are available in the browser
         //to accept the alert using "accept()" method
 
+        Thread.sleep(1000);
         //grab the text from the alert
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
+
+        //click the negative like "No" or "Cancel"
+        driver.findElement(By.id("confirmbtn")).click();
+        driver.switchTo().alert().dismiss();
 
 
     }
